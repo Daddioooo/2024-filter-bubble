@@ -1,0 +1,44 @@
+
+### **Struttura del sito**
+1. **Homepage: "Cos'è una Filter Bubble?"**
+   - Titolo accattivante: "Vivi in una Bolla? Scopri la Filter Bubble!"
+   - Breve introduzione: 
+     > "Ogni giorno navighiamo online, guardiamo video, leggiamo post e facciamo ricerche. Ma sapevi che quello che vedi è influenzato da un algoritmo? Scopri come le Filter Bubble possono cambiare la tua visione del mondo!"
+
+   - **Bottoni interattivi:**
+     - "Che cos'è?" (spiega il concetto in modo semplice)
+     - "Come funziona?" (mostra esempi reali)
+     - "Prova ora!" (esperienza interattiva)
+
+2. **Sezione "Che cos'è?"**
+   - Infografica animata: Una bolla che si forma man mano che si cliccano solo contenuti simili (es. "Mi piace solo sport", "Voglio solo meme divertenti").
+   - Testo semplificato:
+     > "Una filter bubble è quando vedi solo le cose che ti piacciono o con cui sei d'accordo. Gli algoritmi dei social media e dei motori di ricerca personalizzano quello che vedi per farti restare più tempo sulla piattaforma."
+
+3. **Sezione "Come funziona?"**
+   - **Animazione a schede:** 
+     - Un ragazzo fa ricerche su social media e vede sempre più contenuti simili.
+     - Un altro ragazzo esplora punti di vista diversi ed evita di finire in una bolla.
+   - Testo: 
+     > "Gli algoritmi analizzano cosa clicchi, cosa ti piace e cosa cerchi. Poi ti mostrano contenuti simili, lasciando fuori altre idee!"
+
+4. **Sezione interattiva: "Prova ora!"**
+   - Simulazione:
+     - L'utente sceglie alcuni interessi (es. sport, videogiochi, politica).
+     - Vede un feed personalizzato che si restringe man mano che fa scelte più specifiche.
+     - Conclusione: "Ora capisci come funziona una filter bubble? Esplorare contenuti diversi ti aiuta a vedere il mondo più chiaramente!"
+
+5. **Conclusione**
+   - Consigli per uscire dalla bolla:
+     - "Segui persone con idee diverse."
+     - "Cerca informazioni su più fonti."
+     - "Non fidarti solo del primo risultato di Google."
+
+---
+
+### **Tecnologie suggerite**
+- **HTML/CSS**: Per creare la struttura e lo stile del sito.
+- **JavaScript**: Per animazioni interattive e simulazioni (es. feed dinamico).
+- **Framework consigliati**: 
+  - **Bootstrap** (per un design responsive e accattivante).
+  - **GSAP** (per animazioni fluide).

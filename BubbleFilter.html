@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivi in una Bolla? Scopri la Filter Bubble!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #6200ea;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #3700b3;
+        }
+        .section {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #6200ea;
+        }
+        .section p {
+            margin-bottom: 10px;
+        }
+        .simulation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .simulation button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .simulation button:hover {
+            background-color: #3700b3;
+        }
+        .simulation p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vivi in una Bolla? Scopri la Filter Bubble!</h1>
+    </header>
+    <div class="container">
+        <p>
+            Ogni giorno navighiamo online, guardiamo video, leggiamo post e facciamo ricerche.
+            Ma sapevi che quello che vedi è influenzato da un algoritmo? Scopri come le Filter Bubble
+            possono cambiare la tua visione del mondo!
+        </p>
+        <div class="buttons">
+            <button class="button" onclick="document.getElementById('cos-e').scrollIntoView();">Che cos'è?</button>
+            <button class="button" onclick="document.getElementById('come-funziona').scrollIntoView();">Come funziona?</button>
+            <button class="button" onclick="document.getElementById('prova-ora').scrollIntoView();">Prova ora!</button>
+            <button class="button" onclick="document.getElementById('come-evitarla').scrollIntoView();">Come evitarla?</button>
+        </div>
+    </div>
+
+    <div class="container section" id="cos-e">
+        <h2>Che cos'è una Filter Bubble?</h2>
+        <p>
+            Una <strong>Filter Bubble</strong> è una sorta di "bolla" virtuale che si forma quando
+            gli algoritmi dei social media e dei motori di ricerca personalizzano i contenuti
+            che vedi online. Ti mostrano solo ciò che è in linea con i tuoi interessi, escludendo
+            punti di vista diversi o informazioni contrastanti.
+        </p>
+        <p>
+            Immagina di guardare solo video di sport: presto vedrai sempre più contenuti simili,
+            e meno notizie o argomenti che potrebbero sorprenderti o sfidare le tue idee.
+        </p>
+        <img src="filter_bubble_example.jpg" alt="Esempio di Filter Bubble">
+    </div>
+
+    <div class="container section" id="come-funziona">
+        <h2>Come funziona una Filter Bubble?</h2>
+        <p>
+            Gli algoritmi raccolgono dati sulle tue attività online, come:
+        </p>
+        <ul>
+            <li>Cosa cerchi su Google.</li>
+            <li>Quali video guardi su YouTube.</li>
+            <li>Quali post ti piacciono sui social media.</li>
+        </ul>
+        <p>
+            Usano questi dati per mostrarti contenuti simili a quelli con cui hai già interagito.
+            Il risultato? Ti ritrovi in una bolla che riflette le tue preferenze, ma esclude tutto
+            il resto.
+        </p>
+        <p>
+            Questo può sembrare comodo, ma rischia di limitare la tua visione del mondo e il tuo
+            accesso a nuove idee.
+        </p>
+        <img src="algorithm_data.jpg" alt="Algoritmo che analizza dati">
+    </div>
+
+    <div class="container section" id="prova-ora">
+        <h2>Prova ora!</h2>
+        <p>
+            Simula una Filter Bubble scegliendo i tuoi interessi preferiti. Guarda come il tuo "feed"
+            cambia in base alle tue scelte!
+        </p>
+        <div class="simulation">
+            <button onclick="simulateBubble('sport')">Interessi: Sport</button>
+            <button onclick="simulateBubble('musica')">Interessi: Musica</button>
+            <button onclick="simulateBubble('tecnologia')">Interessi: Tecnologia</button>
+            <p id="simulation-result">Scegli un interesse per iniziare la simulazione.</p>
+        </div>
+        <img src="bubble_simulation.jpg" alt="Simulazione di una Filter Bubble">
+    </div>
+
+    <div class="container section" id="come-evitarla">
+        <h2>Come evitare una Filter Bubble?</h2>
+        <p>
+            Ecco alcuni suggerimenti per uscire dalla tua bolla e ampliare le tue prospettive:
+        </p>
+        <ul>
+            <li><strong>Usa modalità di navigazione anonima:</strong> evita che i tuoi dati vengano salvati per la personalizzazione.</li>
+            <li><strong>Cerca attivamente fonti diverse:</strong> esplora siti che offrono punti di vista contrastanti.</li>
+            <li><strong>Disattiva la personalizzazione:</strong> su piattaforme come Google e social media, modifica le impostazioni di privacy.</li>
+            <li><strong>Segui persone con opinioni diverse:</strong> aggiungi varietà al tuo feed social per avere una visione più completa.</li>
+        </ul>
+        <p>
+            Per ulteriori informazioni e risorse:
+        </p>
+        <ul>
+            <li><a href="https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX%3A32016R0679" target="_blank">Regolamento Generale sulla Protezione dei Dati (GDPR)</a></li>
+            <li><a href="https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX%3A32022R2065" target="_blank">Legge sui Servizi Digitali (DSA)</a></li>
+            <li><a href="https://www.eff.org" target="_blank">Electronic Frontier Foundation (EFF)</a></li>
+            <li><a href="https://foundation.mozilla.org" target="_blank">Mozilla Foundation</a></li>
+            <li><a href="https://myactivity.google.com" target="_blank">Google Transparency Center</a></li>
+        </ul>
+        <p>
+            Ricorda, uscire dalla Filter Bubble ti permette di scoprire nuove idee, imparare cose nuove e
+            capire meglio il mondo che ti circonda.
+        </p>
+        <img src="escape_bubble.jpg" alt="Uscire dalla Filter Bubble">
+    </div>
+
+    <script>
+        function simulateBubble(interest) {
+            const messages = {
+                sport: "Il tuo feed è pieno di notizie sportive, risultati e highlights!",
+                musica: "Trovi solo playlist, concerti e artisti del tuo genere preferito!",
+                tecnologia: "Aggiornamenti su gadget, innovazioni e software tech riempiono il tuo feed!"
+            };
+
+            // Trova l'elemento del risultato
+            const resultElement = document.getElementById('simulation-result');
+
+            // Verifica che l'elemento esista
+            if (!resultElement) {
+                console.error("Elemento 'simulation-result' non trovato!");
+                return;
+            }
+
+            // Imposta il contenuto del feed
+            if (messages[interest]) {
+                resultElement.textContent = messages[interest];
+            } else {
+                resultElement.textContent = "Scegli un interesse valido!";
+            }
+
+            // Debug
+            console.log(`Simulazione aggiornata con interesse: ${interest}`);
+        }
+    </script>
+</body>
+</html>
+
+   
